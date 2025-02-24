@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* تنسيق الجسم والخطوط */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  text-decoration: rtl;
+  text-align: right;
+}
+
+/* تنسيق الرأس */
+header {
+  background-color: #009688;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* عنوان الرأس */
+header h1 {
+  font-size: 1.5rem;
+}
+
+/* تنسيق القائمة في القائمة الرئيسية */
+nav ul {
+  list-style: none;
+  display: fexd;
+  text-decoration: rtl;
+}
+
+nav ul li {
+  margin-left: 1rem;
+  display: inline-block;
+  padding: 6px ;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* تنسيق الأقسام */
+.section {
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* تنسيق النموذج */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 0.5rem 0 0.2rem;
+}
+form input{
+    text-decoration: rtl;
+    text-align: right;
+    border-radius: 10px;
+}
+form input::placeholder{
+    text-decoration: rtl;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00796b;
+}
+
+/* تنسيق بطاقات الأطباء */
+.doctor {
+  background-color: #e0f2f1;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+/* تنسيق التذييل */
+footer {
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* تحسين التجاوب */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}    display: filex;
+}
